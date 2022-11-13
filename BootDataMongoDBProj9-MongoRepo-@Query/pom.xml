@@ -14,7 +14,7 @@
 	<name>BootDataMongoDBProj1-MongoRepo</name>
 	<description>CURD Operations</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

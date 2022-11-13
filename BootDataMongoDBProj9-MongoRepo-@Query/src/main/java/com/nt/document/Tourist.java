@@ -25,6 +25,85 @@ public class Tourist implements Serializable {
 	private  Boolean isVaccinated;
 	private  Integer visaDuration;
 	private  LocalDateTime  visaExpirtyTime;
+	public Tourist(String id, String touristName, String nativePlace, Float age, String passportNo, Long contactNo,
+			Boolean isVaccinated, Integer visaDuration, LocalDateTime visaExpirtyTime) {
+		super();
+		this.id = id;
+		this.touristName = touristName;
+		this.nativePlace = nativePlace;
+		this.age = age;
+		this.passportNo = passportNo;
+		this.contactNo = contactNo;
+		this.isVaccinated = isVaccinated;
+		this.visaDuration = visaDuration;
+		this.visaExpirtyTime = visaExpirtyTime;
+	}
+	public Tourist() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getTouristName() {
+		return touristName;
+	}
+	public void setTouristName(String touristName) {
+		this.touristName = touristName;
+	}
+	public String getNativePlace() {
+		return nativePlace;
+	}
+	public void setNativePlace(String nativePlace) {
+		this.nativePlace = nativePlace;
+	}
+	public Float getAge() {
+		return age;
+	}
+	public void setAge(Float age) {
+		this.age = age;
+	}
+	public String getPassportNo() {
+		return passportNo;
+	}
+	public void setPassportNo(String passportNo) {
+		this.passportNo = passportNo;
+	}
+	public Long getContactNo() {
+		return contactNo;
+	}
+	public void setContactNo(Long contactNo) {
+		this.contactNo = contactNo;
+	}
+	public Boolean getIsVaccinated() {
+		return isVaccinated;
+	}
+	public void setIsVaccinated(Boolean isVaccinated) {
+		this.isVaccinated = isVaccinated;
+	}
+	public Integer getVisaDuration() {
+		return visaDuration;
+	}
+	public void setVisaDuration(Integer visaDuration) {
+		this.visaDuration = visaDuration;
+	}
+	public LocalDateTime getVisaExpirtyTime() {
+		return visaExpirtyTime;
+	}
+	public void setVisaExpirtyTime(LocalDateTime visaExpirtyTime) {
+		this.visaExpirtyTime = visaExpirtyTime;
+	}
+	@Override
+	public String toString() {
+		return "Tourist [id=" + id + ", touristName=" + touristName + ", nativePlace=" + nativePlace + ", age=" + age
+				+ ", passportNo=" + passportNo + ", contactNo=" + contactNo + ", isVaccinated=" + isVaccinated
+				+ ", visaDuration=" + visaDuration + ", visaExpirtyTime=" + visaExpirtyTime + "]";
+	}
+	
+	
 	
 
 }

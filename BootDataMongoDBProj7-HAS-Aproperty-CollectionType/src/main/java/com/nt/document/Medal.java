@@ -14,6 +14,21 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Medal {
+	public Medal() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Medal(String mid, String mname, String event, String place) {
+		super();
+		this.mid = mid;
+		this.mname = mname;
+		this.event = event;
+		this.place = place;
+	}
+
+
 	@Id
 	private  String mid;
 	private  String mname;
